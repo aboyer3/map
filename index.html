@@ -35,7 +35,7 @@
                 alert(xhr.statusText)
             }
         })
-        $.when(counties).done(function() {
+        $.when(DATA).done(function() {
             var map = L.map('map')
                 .setView([37.857507, -85.632935], 7);
             var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
